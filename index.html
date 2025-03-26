@@ -5,24 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AC02</title>
+    <script src="js/script.js"></script>
 </head>
+<style>
+    *{
+        text-align: center;
+    }
+</style>
 
 <body>
     <h1>Ex01 - Checar votação</h1>
+    <p>Digite a idade:</p>
     <input type="number" id="idade1" placeholder="Digite a idade">
-    <p>Você é brasileiro?</p>
-    <input type="checkbox" id="brasileiroCheck"> Sim
-    <button onclick="checarVotacao()">Checar</button>
+    <p>Você é brasileiro ?</p>
+    <input type="text" id="nacionalidade" placeholder="(Digite S ou N)">
+    <button onclick="ex01()">Checar</button>
     <p id="resultado1"></p>
 
+    <br></br>
+    <h1>Ex02 - Conversão de Comprimento</h1>
+    <p>Valor:</p>
+    <input type="number" id="valor" placeholder="Valor">
+    <p>Unidade de Origem (cm, m, km):</p>
+    <input type="text" id="origem" placeholder="Unidade">
+    <p>Unidade de Destino (cm, m, km):</p>
+    <input type="text" id="destino" placeholder="Unidade">
+    <button onclick="ex02()">Converter</button>
+    <p id="resultado2"></p>
 
-
+    <br></br>
     <h1>Ex03 - Classificador de Atleta</h1>
+    <p>Digite a idade:</p>
     <input type="number" id="idade3" placeholder="Digite a idade">
-    <button onclick="classificar()">Classificar</button>
+    <button onclick="ex03()">Classificar</button>
     <p id="resultado3"></p>
 
-    <script src="js/script.js"></script>
 </body>
 
 </html>
