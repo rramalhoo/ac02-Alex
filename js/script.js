@@ -1,9 +1,18 @@
-function checarIdade() {
-    var idade = document.getElementById("idade1").value;
+function checarVotacao() {
+    var idade = parseInt(document.getElementById("idade1").value);
+    var msg = document.getElementById("resultado1");
+    var brasileiroSim = document.getElementById("brasileiroCheck").checked;
+
+    if (brasileiroSim) {
+        if (idade >= 16) {
+            msg.textContent = "Você pode votar!";
+        } else {
+            msg.textContent = "Você não pode votar porque é menor de 16 anos.";
+        }
+    } else {
+        msg.textContent = "Você não pode votar porque não é brasileiro(a).";
+    }
 }
-
-
-
 
 
 
