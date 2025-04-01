@@ -20,27 +20,27 @@ function ex02() {
   var valor = parseFloat(document.getElementById("valor").value)
   var origem = document.getElementById("origem").value
   var destino = document.getElementById("destino").value
-  var resultado;
+  var msg;
 
   if (origem === destino) {
-    resultado = valor
+    msg = valor
   } else if (origem === "cm" && destino === "m") {
-    resultado = valor / 100
+    msg = valor / 100
   } else if (origem === "cm" && destino === "km") {
-    resultado = valor / 100000
+    msg = valor / 100000
   } else if (origem === "m" && destino === "cm") {
-    resultado = valor * 100
+    msg = valor * 100
   } else if (origem === "m" && destino === "km") {
-    resultado = valor / 1000
+    msg = valor / 1000
   } else if (origem === "km" && destino === "cm") {
-    resultado = valor * 100000
+    msg = valor * 100000
   } else if (origem === "km" && destino === "m") {
-    resultado = valor * 1000
+    msg = valor * 1000
   } else {
-    resultado = "Unidades invalidas"
+    msg = "Unidades invalidas"
   }
 
-  document.getElementById("resultado2").innerHTML = `${valor} ${origem} = ${resultado} ${destino}`
+  document.getElementById("resultado2").innerHTML = `${valor} ${origem} = ${msg} ${destino}`
 }
 
 
@@ -51,7 +51,7 @@ function ex03() {
   var idade = document.getElementById("idade3").value
   var msg = ''
   if (idade < 0) {
-    msg = 'Idade inválida.'
+    msg = 'Idade inválida !'
   } else if (idade <= 7) {
     msg = 'Mirim'
   } else if (idade <= 10) {
